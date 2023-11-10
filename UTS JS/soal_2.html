@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2</title>
+</head>
+<body>
+    <!-- Menambahkan Elemen h1 -->
+    <h1 id="judul">Selamat Ujian Framework JS</h1>
+
+    <!-- Menambahkan Elemen div untuk Biodata Mahasiswa -->
+    <div id="biodata">
+        <p>Nama: <span id="nama">Leni</span></p>
+        <p>Nim: <span id="nim">456321</span></p>
+        <p>Jurusan: <span id="jurusan">Matematika</span></p>
+        <p>Tanggal Ujian: <span id="tglUjian">1 Mei 2024</span></p>
+        <img id="foto" src="img/Leni.png" alt="Photo Mahasiswa">
+    </div>
+
+    <!-- Menambahkan skrip JavaScript -->
+    <script>
+        // Menambahkan teks pada elemen h1
+        document.getElementById("judul").innerText="Selamat Ujian Framework JavaScript";
+
+        // Mengisi Biodata Mahasiswa
+        document.getElementById("nama").innerText = "Leni Junika Adrian";
+        document.getElementById("nim").innerText = "SI18210009";
+        document.getElementById("jurusan").innerText = "Sistem Informasi";
+        document.getElementById("tglUjian").innerText = "10 November 2023";
+        document.getElementById("foto").src = "img/Leni.png";
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 5</title>
+    <style>
+      #gambar_hewan {
+        max-width: 20%;
+        height: auto;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="gambar_hewan"/>
+    <tr>
+        <td><button onclick="tampilGmbr('ayam')">Ayam</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="tampilGmbr('kucing')">Kucing</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="tampilGmbr('sapi')">Sapi</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="tampilGmbr('kupu-kupu')">Kupu-Kupu</button></td>
+      </tr>
+
+    <script>
+      function tampilGmbr(animal) {
+        var imageElement = document.getElementById("gambar_hewan");
+
+        switch (animal) {
+          case "ayam":
+            imageElement.src = "img/ayam.jpg";
+            break;
+          case "kucing":
+
+            imageElement.src = "img/kucing.jpg";
+            break;
+          case "sapi":
+            imageElement.src = "img/sapi.jpg";
+            break;
+          case "kupu-kupu":
+            imageElement.src = "img/kupu.jpg";
+            break;
+          default:
+            imageElement.src = "";
+        }
+      }
+    </script>
+  </body>
+</html>

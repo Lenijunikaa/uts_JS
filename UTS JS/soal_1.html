@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 1</title>
+</head>
+<body>
+    <script>
+        // Membuat object buah
+        var buah = {
+            buah_1:"Buah Naga",
+            buah_2:"Buah Delima",
+            buah_3:"Buah Strawberry",
+            buah_4:"Buah Nangka",
+            buah_5:"Buah Jambu"
+        };
+
+        // Perulangan untuk menampilkan nama buah
+        for (var key in buah){
+            if(buah.hasOwnProperty(key)){
+                console.log(buah[key]);
+            }
+        }
+    </script>
+</body>
+</html>
